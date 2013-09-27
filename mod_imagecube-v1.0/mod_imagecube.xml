@@ -14,17 +14,21 @@
 		<filename module="mod_imagecube">mod_imagecube.xml</filename>
 		<filename module="mod_imagecube">helper.php</filename>
 		<filename module="mod_imagecube">index.html</filename>
-		<folder>tmpl/</folder>		
-	    <folder>assets/</folder>
+		<folder>tmpl/</folder>
+		<folder>assets/</folder>
 	</files>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
 					<option value="0">Never</option>
+				    </field>
+				<field name="cache" type="list" default="1" label="JQuery" description="Select whether to use JQuery from this module">
+				    <option value="0">No</option>
+				    <option value="1">Yes</option>
 				</field>
 				<field name="@spacer" type="spacer" default="" label="" description="" />
-        		<field name="imagefolder" type="text" default="/images/imagecube/" label="Image Folder" description="Select the folder containing the images to be shown" />
+				<field name="imagefolder" type="text" default="/images/imagecube/" label="Image Folder" description="Select the folder containing the images to be shown" />
 				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
 			</fieldset>
 		</fields>
