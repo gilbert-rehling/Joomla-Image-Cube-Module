@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" client="site" method="upgrade">
+	<name>Imagecube</name>
+	<author>Gilbert Rehling</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>Copyright (C) 2006 - 2011 IMBI Indie Portal. All rights reserved.</copyright>
+	<license>Private Use Only</license>
+	<authorEmail>gilbert@imbi.com.au</authorEmail>
+	<authorUrl>www.imbi.com.au</authorUrl>
+	<version>1.0.0</version>
+	<description>DESCIMAGECUBEDISPLAY</description>
+	<files>
+		<filename module="mod_imagecube">mod_imagecube.php</filename>
+		<filename module="mod_imagecube">mod_imagecube.xml</filename>
+		<filename module="mod_imagecube">helper.php</filename>
+		<filename module="mod_imagecube">index.html</filename>
+		<folder>tmpl/</folder>		
+	    <folder>assets/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+					<option value="0">Never</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+        		<field name="imagefolder" type="text" default="/images/imagecube/" label="Image Folder" description="Select the folder containing the images to be shown" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
